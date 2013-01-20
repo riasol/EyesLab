@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Android/Android.iml" filepath="$PROJECT_DIR$/Android/Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/BB10/BB10.iml" filepath="$PROJECT_DIR$/BB10/BB10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BB10As/BB10As.iml" filepath="$PROJECT_DIR$/BB10As/BB10As.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BB10Flex/BB10Flex.iml" filepath="$PROJECT_DIR$/BB10Flex/BB10Flex.iml" />
       <module fileurl="file://$PROJECT_DIR$/Base/Base.iml" filepath="$PROJECT_DIR$/Base/Base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EyesLab.iml" filepath="$PROJECT_DIR$/EyesLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/Web/Web.iml" filepath="$PROJECT_DIR$/Web/Web.iml" />
     </modules>
   </component>

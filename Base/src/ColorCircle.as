@@ -8,7 +8,9 @@ public class ColorCircle extends Sprite {
     private var _colors:Vector.<uint> = new <uint>[0x1FDD79,0x0F7641,0x762A17,0x522CBE,0xF6F243]
     private var amounts:Vector.<Number> = new <Number>[2, 3, 1.5,1,1.8]
     private var radius:Number
-
+	public function ColorCircle(diameter:Number) {
+		radius=diameter/2
+	}
     public function drawCircle(isRandomStart:Boolean=false):void {
         var sum:Number = 0
         amounts.forEach(function (el:Number, i:int, all:Vector.<Number>) {
@@ -43,9 +45,7 @@ public class ColorCircle extends Sprite {
         drawCircle()
     }
 
-    public function ColorCircle(diameter:Number) {
-        radius=diameter/2
-    }
+    
 
     public function getSegment(point:Array):Array {
         var idx:uint
@@ -70,5 +70,11 @@ public class ColorCircle extends Sprite {
         }*/
         return[idx,color]
     }
+	override public function get width():Number{
+	return radius*2
+	}
+	override public function get height():Number{
+	return radius*2
+	}
 }
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.multiplatform">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_COMMAND_LINE_ARGUMENTS" value=""/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_PUBLISHER_ID" value=""/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_SECURITY_POLICY_FILE" value="security-policies/default.xml"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/BB10Flex.mxml"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_CLEAR_APP_DATA" value="false"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOBILE_LAUNCH_HANDLER" value="com.qnx.flexide.multiplatform.qnx.launching.DeviceQnxOnDeviceLaunchHandler"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOBILE_PLATFORM" value="com.qnx.flexide.multiplatform.qnx.platform"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOD_APP_ID:src\BB10Flex.mxml" value="riasol.BB10Flex"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="BB10Flex"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/C:/workspace/EyesLab/BB10Flex/bin-debug/BB10Flex-app.xml"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_SELECTED_BUILD_TARGET" value=""/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<stringAttribute key="com.qnx.flexide.multiplatform.qnx.launching.ATTR_BAR_FILE_PATH" value="C:\workspace\EyesLab\BB10Flex\bin-debug\BB10Flex.bar"/>
+<stringAttribute key="com.qnx.flexide.multiplatform.qnx.launching.ATTR_DEPLOY_COMMAND" value="Install and Launch"/>
+<stringAttribute key="com.qnx.flexide.multiplatform.qnx.launching.ATTR_TARGET" value="75f377c1-1720-460b-b461-953e3163c0ca"/>
+<booleanAttribute key="com.qnx.flexide.multiplatform.qnx.launching.ATTR_USE_CAPTIVE_RUNTIME" value="false"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/BB10Flex"/>
+<listEntry value="/BB10Flex/src/BB10Flex.mxml"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

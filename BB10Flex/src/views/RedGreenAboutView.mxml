@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		xmlns:s="library://ns.adobe.com/flex/spark" title="Red-green blindness about">
+	<fx:Script>
+		<![CDATA[
+			import flash.net.navigateToURL;
+		]]>
+	</fx:Script>
+	<fx:Style>
+		@namespace s "library://ns.adobe.com/flex/spark";
+		
+		@font-face { 
+			src: url("c:/windows/fonts/arial.ttf"); 
+			fontFamily: myFontFamily; 
+			embedAsCFF: false; 
+		}       
+		.customStyle {
+			fontFamily: myFontFamily;
+		}  
+	</fx:Style>
+	<s:layout>
+		<s:VerticalLayout gap="15"  horizontalAlign="center"/>
+	</s:layout>
+		<s:actionContent>
+			<s:Button label="home" click="navigator.popToFirstView()"/>
+		</s:actionContent>
+		
+		<s:TextArea id="area" height="100%" editable="false" paddingLeft="5" paddingRight="5" styleName="customStyle">
+		<s:text>
+			Absence of the red or green retinal photoreceptors causes 
+			difficulty with discriminating red and green hues. 
+			It's genetical conditioned and affects much often males.</s:text>
+		</s:TextArea>
+		<s:Button label="more in wikipedia" click="navigateToURL(new URLRequest('http://en.wikipedia.org/wiki/Color_blindness#Red.E2.80.93green_color_blindness'))"/>
+</s:View>

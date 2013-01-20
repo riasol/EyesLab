@@ -1,0 +1,34 @@
+<project name="BB10Flex">
+	<property file="../../variables.properties">
+	</property>
+	<import file="${workspace}/FlashProLib/src/build.xml" />
+	<target name="dist" depends="clean">
+		<aircompile sdk="${bbpb.sdk}" srcdir="${workspace}/EyesLab/${ant.project.name}/src" module="${ant.project.name}" cmdline="-source-path+='${workspace}/EyesLab/Base/src'
+							" destdir="${workspace}/EyesLab/${ant.project.name}/build" configname="airmobile"/>
+		<mkdir dir="build" />
+		<mkdir dir="dist" />
+		<copy todir="build">
+			<fileset dir="src">
+			<include name="appIcon.png" />
+				<include name="${ant.project.name}-app.xml" />
+			</fileset>
+		</copy>
+		<playbook_package sdk="${bbpb.sdk}" directory="${workspace}/EyesLab/${ant.project.name}/build" output="${workspace}/EyesLab/${ant.project.name}/dist/${ant.project.name}.bar"
+			descriptor="${workspace}/EyesLab/${ant.project.name}/build/${ant.project.name}-app.xml"
+			swf="${workspace}/EyesLab/${ant.project.name}/build/${ant.project.name}.swf"
+			files="${workspace}/EyesLab/${ant.project.name}/build/appIcon.png"
+			publisher="riasol" />
+		<playbook_sign sdk="${bbpb.sdk}" cskpass="strona90" storepass="strona10" bar="${workspace}/EyesLab/${ant.project.name}/dist/${ant.project.name}.bar" />
+	<copy file="${workspace}/EyesLab/${ant.project.name}/dist/${ant.project.name}.bar" todir="${upload.dir}"></copy>
+	</target>
+	<target name="clean">
+		<delete dir="build">
+		</delete>
+		<delete dir="dist">
+		</delete>
+	</target>
+	<target name="launch">
+		<!--<uninstallbbapp sdk="${bbpb.sdk}" bar="${workspace}/${ant.project.name}/dist/${ant.project.name}.bar" ip="192.168.2.128" password="strona"/>-->
+		<playbook_launch sdk="${bbpb.sdk}" bar="${workspace}/EyesLab/${ant.project.name}/dist/${ant.project.name}.bar" ip="169.254.0.1" password="page" />
+	</target>
+</project>

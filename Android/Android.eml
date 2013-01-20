@@ -3,4 +3,7 @@
 	<output-test url="file://$MODULE_DIR$/../out/test/Android"/>
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="src" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/Base/src"/>
+	</lib>
 </component>

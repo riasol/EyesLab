@@ -10,6 +10,14 @@
       <maximumStackSize value="2" />
       <properties />
     </buildFile>
+    <buildFile url="file://$PROJECT_DIR$/BB10Flex/build.xml">
+      <additionalClassPath />
+      <antReference projectDefault="true" />
+      <customJdkName value="1.7" />
+      <maximumHeapSize value="128" />
+      <maximumStackSize value="2" />
+      <properties />
+    </buildFile>
   </component>
 </project>
 
