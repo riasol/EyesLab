@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module classpath="eclipse" classpath-dir="$MODULE_DIR$" type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="Web">
+    <configurations>
+      <configuration name="Web" main-class="EyesLab" output-file="EyesLab.swf" output-folder="$MODULE_DIR$/../out/production/Web">
+        <dependencies target-player="11.1">
+          <entries>
+            <entry module-name="Base" build-configuration-name="Base">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.6.0" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+</module>
+

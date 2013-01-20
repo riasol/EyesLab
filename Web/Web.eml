@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" jdk="4.6.0" jdk_type="Flex SDK Type (new)">
+	<output-test url="file://$MODULE_DIR$/../out/test/Web"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="src" scope="COMPILE">
+		<relative-module-cls project-related="file://$PROJECT_DIR$/Base/src"/>
+	</lib>
+</component>

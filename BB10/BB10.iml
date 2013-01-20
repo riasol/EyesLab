@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module classpath="eclipse" classpath-dir="$MODULE_DIR$" type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="BB10">
+    <configurations>
+      <configuration name="BB10" target-platform="Desktop" pure-as="true" main-class="BB10" output-file="BB10.swf" output-folder="$MODULE_DIR$/../out/production/BB10">
+        <dependencies>
+          <entries>
+            <entry library-id="50bd7897-ef4a-46d6-bfd6-6f030b62008e">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry library-name="SparkComponents" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="blackberry-tablet-sdk-3.0.0" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop package-file-name="BB10" />
+        <packaging-android />
+        <packaging-ios />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+</module>
+

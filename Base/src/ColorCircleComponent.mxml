@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+         creationComplete="onCreated(event)" click="onClickWhole(event)">
+    <fx:Script><![CDATA[
+		import mx.core.UIComponent;
+		
+		import org.apache.flex.spark.components.colorpicker.ColorPicker;
+		import org.apache.flex.spark.events.ColorChangeEvent;
+
+        private var drawer:ColorCircle
+
+        private function onCreated(event:FlexEvent):void {
+            var uiCo:UIComponent = new UIComponent()
+            addElement(uiCo)
+            drawer = new ColorCircle(width)
+            uiCo.addChild(drawer)
+            with (drawer) {
+                drawCircle()
+                x = width / 2
+                y = height / 2
+                addEventListener(MouseEvent.CLICK, onCircleClick)
+            }
+        }
+
+        private var picker:ColorPicker
+
+        private function onCircleClick(e:MouseEvent):void {
+            cleanupPicker()
+            var drawerPoint:Array = drawer.getSegment([e.localX, e.localY])
+            if (drawerPoint[1] == -1)
+                return
+            e.stopPropagation()
+            picker = new ColorPicker()
+            picker.selectedColor = drawerPoint[1]
+            addElement(picker)
+            picker.addEventListener(ColorChangeEvent.CHOOSE, function (e:ColorChangeEvent):void {
+                drawer.setOneColor(drawerPoint[0], e.color)
+                cleanupPicker();
+            })
+        }
+
+        import mx.events.FlexEvent;
+
+        private function onClickWhole(event:MouseEvent):void {
+           cleanupPicker()
+        }
+
+        private function cleanupPicker():void {
+            if (picker != null){
+                removeElement(picker)
+                picker = null
+            }
+        }
+        ]]></fx:Script>
+</s:Group>

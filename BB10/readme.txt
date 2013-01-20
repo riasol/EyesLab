@@ -1,0 +1,1 @@
+http://square-brackets.tumblr.com/post/4068509625/playbook-development-with-intellij-idea

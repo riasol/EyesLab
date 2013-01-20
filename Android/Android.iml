@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module classpath="eclipse" classpath-dir="$MODULE_DIR$" type="Flex" version="4">
+  <component name="FlexBuildConfigurationManager" active="Android">
+    <configurations>
+      <configuration name="Android" target-platform="Mobile" main-class="EyesLabAndro" output-file="EyesLabAndro.swf" output-folder="$MODULE_DIR$/../out/production/Android">
+        <dependencies target-player="11.1">
+          <entries>
+            <entry library-name="SparkComponents" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
+            <entry module-name="Base" build-configuration-name="Base">
+              <dependency linkage="Merged" />
+            </entry>
+          </entries>
+          <sdk name="4.6.0" />
+        </dependencies>
+        <compiler-options />
+        <packaging-air-desktop />
+        <packaging-android enabled="true" package-file-name="Android" />
+        <packaging-ios enabled="true" package-file-name="Android" />
+      </configuration>
+    </configurations>
+    <compiler-options />
+  </component>
+</module>
+

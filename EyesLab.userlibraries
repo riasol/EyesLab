@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="aircilistener">
+    <archive path="C:/workspace/flexunit/fluint-extensions-4.1.0-8-4.1.0.16076.swc" />
+    <archive path="C:/workspace/flexunit/flexUnitTasks-4.1.0-8-javadoc.jar" />
+    <archive path="C:/workspace/flexunit/flexunit-4.1.0-8-flex_4.1.0.16076.swc" />
+    <archive path="C:/workspace/flexunit/flexunit-aircilistener-4.1.0-8-4.1.0.16076.swc" />
+    <archive path="C:/workspace/flexunit/flexunit-uilistener-4.1.0-8-4.1.0.16076.swc" />
+    <archive path="C:/workspace/flexunit/flexUnitTasks-4.1.0-8-sources.jar" />
+    <archive path="C:/workspace/flexunit/flexUnitTasks-4.1.0-8.jar" />
+    <archive path="C:/workspace/flexunit/flexunit-flexcoverlistener-4.1.0-8-4.1.0.16076.swc" />
+    <archive path="C:/workspace/flexunit/flexunit-4.1.0-8-as3_4.1.0.16076.swc" />
+    <archive path="C:/workspace/flexunit/flexunit-cilistener-4.1.0-8-4.1.0.16076.swc" />
+  </library>
+  <library name="jQuery UI-1.9.1" />
+  <library name="jQuery-1.8.2" />
+  <library name="Python 2.7.3 (C:/DevEnv/Python27/pythonw.exe) interpreter library">
+    <archive path="C:/DevEnv/Python27/DLLs" />
+    <archive path="C:/DevEnv/Python27/Lib" />
+    <archive path="C:/DevEnv/Python27/Lib/lib-tk" />
+    <archive path="C:/DevEnv/Python27" />
+    <archive path="C:/DevEnv/Python27/Lib/site-packages" />
+    <archive path="C:/Users/robert/.IntelliJIdea12/system/python_stubs/267021104" />
+  </library>
+  <library name="src">
+    <archive path="C:/workspace/as3-signals-master/src" />
+  </library>
+</eclipse-userlibraries>
+

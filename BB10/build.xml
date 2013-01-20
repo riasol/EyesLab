@@ -1,0 +1,7 @@
+<project>
+    <import file="../../FlashProLib/src/build.xml"/>
+    <property name="sdk" value="c:/DevEnv/bb-air-10/blackberry-tablet-sdk-3.0.0"/>
+    <target name="run">
+        <playbook_launch sdk="${sdk}" bar="" id="" ip="" password="page"/>
+    </target>
+</project>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:l="*">
+    <s:layout>
+        <s:VerticalLayout horizontalAlign="center" verticalAlign="middle" gap="15"/>
+    </s:layout>
+    <s:Label text="Count the number of fields" color="#003cff" fontWeight="bold"/>
+    <l:ColorCircleComponentPlain id="colorComponent" width="80%" height="{colorComponent.width}"/>
+    <s:HGroup gap="10">
+        <s:Button label="&lt;" click="if(Number(numericInput.text)>1)numericInput.text=''+(Number(numericInput.text)-1)"/>
+	<s:TextInput id="numericInput" restrict="3-9" text="3" change="resultLabel.text=''"
+	width="50" height="100%"   
+	needsSoftKeyboard="true" softKeyboardType="number"/>
+        <s:Button label="&gt;" click="numericInput.text=''+(Number(numericInput.text)+1)"/>
+        <s:Spacer width="15"/>
+        <s:Button id="button" label="check" click="button_clickHandler(event)"/>
+    </s:HGroup>
+    <s:Label id="resultLabel"/>
+    <fx:Script><![CDATA[
+        private function button_clickHandler(event:MouseEvent):void {
+            var valid:uint = 5
+			var vNum:Number=Number(numericInput.text)
+            if (vNum == valid) {
+                resultLabel.text = "Yes, there is " + valid + " colors"
+                resultLabel.setStyle('color', 0x44a029)
+            }
+            else {
+                resultLabel.text = "No!!! Try again"
+                resultLabel.setStyle('color', 0xA0101F)
+                colorComponent.drawCircle()
+            }
+        }
+        ]]></fx:Script>
+</s:Group>
