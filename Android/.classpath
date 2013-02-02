@@ -2,7 +2,7 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/4.9.0"/>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry exported="true" kind="lib" path="/Base/src"/>
+	<classpathentry exported="true" kind="var" path="WORKSPACE_LOC/EyesLab/Base/src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/SparkComponents"/>
 	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/Base"/>
 	<classpathentry kind="output" path="bin"/>

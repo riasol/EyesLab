@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component inherit-compiler-output="true" jdk="blackberry-tablet-sdk-3.0.0" jdk_type="Flex SDK Type (new)">
-	<output-test url="file://$MODULE_DIR$/../out/test/BB10"/>
+	<output-test url="file://$WORKSPACE$/EyesLab/out/test/BB10"/>
 	<exclude-output/>
 	<contentEntry url="file://$MODULE_DIR$"/>
 </component>

@@ -2,7 +2,7 @@
 <module classpath="eclipse" classpath-dir="$MODULE_DIR$" type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="Base">
     <configurations>
-      <configuration name="Base" output-type="Library" output-file="Base.swc" output-folder="$MODULE_DIR$/../out/production/Base">
+      <configuration name="Base" output-type="Library" output-file="Base.swc" output-folder="$WORKSPACE$/EyesLab/out/production/Base">
         <dependencies target-player="11.1">
           <entries>
             <entry library-name="SparkComponents" library-level="application">

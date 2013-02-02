@@ -2,7 +2,7 @@
 <module classpath="eclipse" classpath-dir="$MODULE_DIR$" type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="Android">
     <configurations>
-      <configuration name="Android" target-platform="Mobile" main-class="EyesLabAndro" output-file="EyesLabAndro.swf" output-folder="$MODULE_DIR$/../out/production/Android">
+      <configuration name="Android" target-platform="Mobile" main-class="EyesLabAndro" output-file="EyesLabAndro.swf" output-folder="$WORKSPACE$/EyesLab/out/production/Android">
         <dependencies target-player="11.1">
           <entries>
             <entry library-name="SparkComponents" library-level="application">

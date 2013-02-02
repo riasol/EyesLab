@@ -2,7 +2,7 @@
 <module classpath="eclipse" classpath-dir="$MODULE_DIR$" type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="Web">
     <configurations>
-      <configuration name="Web" main-class="EyesLab" output-file="EyesLab.swf" output-folder="$MODULE_DIR$/../out/production/Web">
+      <configuration name="Web" main-class="EyesLab" output-file="EyesLab.swf" output-folder="$WORKSPACE$/EyesLab/out/production/Web">
         <dependencies target-player="11.1">
           <entries>
             <entry module-name="Base" build-configuration-name="Base">

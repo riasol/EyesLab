@@ -2,7 +2,7 @@
 <module classpath="eclipse" classpath-dir="$MODULE_DIR$" type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="BB10">
     <configurations>
-      <configuration name="BB10" target-platform="Desktop" pure-as="true" main-class="BB10" output-file="BB10.swf" output-folder="$MODULE_DIR$/../out/production/BB10">
+      <configuration name="BB10" target-platform="Desktop" pure-as="true" main-class="BB10" output-file="BB10.swf" output-folder="$WORKSPACE$/EyesLab/out/production/BB10">
         <dependencies>
           <entries>
             <entry library-id="50bd7897-ef4a-46d6-bfd6-6f030b62008e">

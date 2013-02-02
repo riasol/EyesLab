@@ -13,7 +13,7 @@ public class ColorCircle extends Sprite {
 	}
     public function drawCircle(isRandomStart:Boolean=false):void {
         var sum:Number = 0
-        amounts.forEach(function (el:Number, i:int, all:Vector.<Number>) {
+        amounts.forEach(function (el:Number, i:int, all:Vector.<Number>):void {
             sum += el
         })
         var radNow:Number = isRandomStart?Math.random()*Math.PI*2: 0

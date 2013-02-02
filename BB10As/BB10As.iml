@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="BB10As">
     <configurations>
-      <configuration name="BB10As" target-platform="Mobile" pure-as="true" main-class="BB10As" output-file="BB10As.swf" output-folder="$MODULE_DIR$/../out/production/BB10As">
+      <configuration name="BB10As" target-platform="Mobile" pure-as="true" main-class="BB10As" output-file="BB10As.swf" output-folder="$WORKSPACE$/EyesLab/out/production/BB10As">
         <dependencies>
           <entries>
             <entry module-name="Base" build-configuration-name="Base">

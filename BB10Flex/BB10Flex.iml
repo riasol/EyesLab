@@ -2,7 +2,7 @@
 <module type="Flex" version="4">
   <component name="FlexBuildConfigurationManager" active="BB10Flex">
     <configurations>
-      <configuration name="BB10Flex" target-platform="Mobile" main-class="BB10Flex" output-file="BB10Flex.swf" output-folder="$MODULE_DIR$/../out/production/BB10Flex" skip-build="true">
+      <configuration name="BB10Flex" target-platform="Mobile" main-class="BB10Flex" output-file="BB10Flex.swf" output-folder="$WORKSPACE$/EyesLab/out/production/BB10Flex" skip-build="true">
         <dependencies target-player="11.1">
           <entries>
             <entry module-name="Base" build-configuration-name="Base">
