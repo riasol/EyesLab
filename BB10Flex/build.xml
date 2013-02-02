@@ -1,6 +1,6 @@
 <project name="BB10Flex">
-	<property file="../../variables.properties">
-	</property>
+	<property file="../../variables.properties" />
+	<property file="project.properties" />
 	<import file="${workspace}/FlashProLib/src/build.xml" />
 	<target name="dist" depends="clean">
 		<aircompile sdk="${bbpb.sdk}"
@@ -27,8 +27,8 @@
 		                  files="${workspace}/EyesLab/${ant.project.name}/build/appIcon.png"
 		                  publisher="riasol" />
 		<playbook_sign sdk="${bbpb.sdk}"
-		               cskpass="strona90"
-		               storepass="strona10"
+		               cskpass="${cskpass}"
+		               storepass="${storepass}"
 		               bar="${workspace}/EyesLab/${ant.project.name}/dist/${ant.project.name}.bar" />
 		<copy file="${workspace}/EyesLab/${ant.project.name}/dist/${ant.project.name}.bar"
 		      todir="${upload.dir}">
@@ -41,10 +41,15 @@
 		</delete>
 	</target>
 	<target name="launch">
-		<!--<uninstallbbapp sdk="${bbpb.sdk}" bar="${workspace}/${ant.project.name}/dist/${ant.project.name}.bar" ip="192.168.2.128" password="strona"/>-->
 		<playbook_launch sdk="${bbpb.sdk}"
 		                 bar="${workspace}/EyesLab/${ant.project.name}/dist/${ant.project.name}.bar"
 		                 ip="169.254.0.1"
-		                 password="page" />
+		                 password="${devicepasswd}" />
+	</target>
+	<target name="uninstall">
+		<uninstallbbapp sdk="${bbpb.sdk}"
+		                bar="${workspace}/${ant.project.name}/dist/${ant.project.name}.bar"
+		                ip="169.254.0.1"
+		                password="${devicepasswd}" />
 	</target>
 </project>
