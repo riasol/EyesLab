@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/BB10WW/src/app.js" />
+        <item url="file://$PROJECT_DIR$/BB10WW/src/EyesLab.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/BB10WW/src/app.js" />
+      <root url="file://$PROJECT_DIR$/BB10WW/src/EyesLab.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

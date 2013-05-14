@@ -1,0 +1,12 @@
+<project name="BB10WW">
+    <property file="../../variables.properties"/>
+    <import file="${workspace}/FlashProLib/src/build.xml"/>
+    <target name="package">
+        <bbwp_sync_token sdk="${webworks.bb10}" tokenFileBar="debug10.bar"/>
+        <bbwp_compile sdk="${webworks.bb10}" src="${basedir}/src" output="${basedir}/out"/>
+    </target>
+    <target name="deploy">
+        <bbwp_deploy sdk="${webworks.bb10}" bar="${basedir}/out/device/src.bar" devicePassword="page"
+                     deviceIP="169.254.0.1"/>
+    </target>
+</project>

@@ -1,0 +1,14 @@
+#drawing {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  position: relative; }
+
+#drawing * {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  position: absolute; }
+
+#drawing .selected {
+  border-width: 3px; }

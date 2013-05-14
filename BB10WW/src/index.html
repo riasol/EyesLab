@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no" />
+    <link  rel="stylesheet" type="text/css" href="bbui.css"/>
+    <link  rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="bbui.js"></script>
+    <script type="text/javascript" src="local:///chrome/webworks.js"></script>
+    <script type="text/javascript" src="EyesLab.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('webworksready', function(e) {
+            window.app=new EyesLab(new NativeBB(bb));
+
+        }, false);
+    </script>
+</head>
+<body>
+</body>
+</html>
