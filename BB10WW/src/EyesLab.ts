@@ -5,7 +5,9 @@ class ColorPointer {
         html.style.left = x + 'px'
         html.style.top = y + 'px'
         html.onclick = ()=> {
-            html.className = 'selected'
+            html.className = html.className == 'selected' ? '' : 'selected'
+            var add = html.className == 'selected' ? 1 : -1
+            window.app.countNumber = window.app.countNumber + add;
         };
     }
 }
@@ -17,58 +19,87 @@ class EyesLab {
         this.loadScreen(first)
     }
 
+    private _countNumber:number=0;
+    public get countNumber():number {
+        return this._countNumber
+    }
+
+    public set countNumber(v:number) {
+        this._countNumber = v;
+        document.getElementById('currentSectionCount').innerHTML=<string>this._countNumber;
+    }
+onCountChange:()=>{};
     private loadScreen(name:string) {
         this.native.loadScreen(name);
     }
 
     public onReady_home():void {
-        var el=document.getElementById('count')
-        el.onchange=()=>{
-            this.colorCount=<number>el.value
+        var el = document.getElementById('count')
+        el.onchange = ()=> {
+            this.colorCount = <number>el.value
             this.drawColors()
         }
         el.onchange()
+        document.getElementById('checkBtn').onclick=this.onCheck
     }
-
+private onCheck():void{
+    var el:HTMLElement=document.getElementById('checkResult')
+    if(this._countNumber){
+        el.innerText='Right'
+        el.className='ok'
+    }else{
+        el.innerText='Wrong'
+        el.className='fail'
+    }
+}
     public home():void {
-        this.native.loadScreen('home');
+        this.loadScreen('home');
     }
 
     private colorCount:number;
 
     private drawColors():void {
-        var colors:string[] = '5ce800 ffcc00 ff0000 616c00 2b52ff d929e2 c9c9c9 00e0e0 009a00 b28200'.split(' ')
+        var colors:string[] = '5ce800 ffcc00 ff0000 616c00 2b52ff d929e2 c9c9c9 00e0e0 009a00 b28200'.split(' ').sort()
         var contain:HTMLElement = document.getElementById('drawing')
         contain.innerHTML = ''
         var containerLen:number = 400
-        var selected:number[] = []
+        var selectedPositions:number[] = []
+        var selectedColors:number[] = []
         var itemsPerSide:number = 5
-        var newPosition = ()=> {
+        var newPosition = ():Object=> {
+            var colorCount:number = 0;
+            var cIdx:number;
             while (true) {
-                var idx:number = Math.ceil(Math.random() * Math.pow(itemsPerSide, 2))
-                var searchIdx:number=-1
-                var count:number=0
-                while(true){
-                    searchIdx=selected.indexOf(idx,searchIdx+1)
-                    if(searchIdx>-1)
-                    count++
-                    if(searchIdx==-1)
-                    break;
+                cIdx = Math.floor(Math.random() * colors.length)
+                var cSearch:number = -1;
+                var cOnes:number = 0
+                while (true) {
+                    cSearch = selectedColors.indexOf(cIdx, cSearch + 1);
+                    if (cSearch > -1)
+                        cOnes++
+                    else
+                        break;
                 }
-                if (searchIdx == -1 || count<=2) {
-                    selected.push(idx)
+                if (cOnes < 2)
                     break
-                }
             }
-            return {x: Math.ceil(idx/itemsPerSide), y: idx%itemsPerSide}
+            selectedColors.push(cIdx)
+            var idx:number;
+            while (true) {
+                idx = Math.ceil(Math.random() * Math.pow(itemsPerSide, 2))
+                if (selectedPositions.indexOf(idx) == -1)
+                    break;
+            }
+            selectedPositions.push(idx)
+            return {x: Math.ceil(idx / itemsPerSide), y: idx % itemsPerSide, cIdx: cIdx}
         }
-        var perSection:number=containerLen/itemsPerSide
+        var perSection:number = containerLen / itemsPerSide
         for (var i = 0; i < this.colorCount; i++) {
             var obj = colors[i];
             var circ = document.createElement('div')
             contain.appendChild(circ)
             var pos = newPosition();
-            new ColorPointer('#'+colors[i], pos.x*perSection, pos.y*perSection, circ);
+            new ColorPointer('#' + colors[pos.cIdx], pos.x * perSection, pos.y * perSection, circ);
         }
     }
 
